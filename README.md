@@ -4,7 +4,11 @@
 
 ![Streamlit App](images/preview.png)
 
+---
+
 A Deep Learning based Speech Emotion Recognition (SER) system that detects human emotions from voice recordings using MFCC feature extraction and a Neural Network model.
+
+---
 
 📌 Project Overview
 
@@ -28,11 +32,15 @@ This project analyzes speech audio files and predicts emotions such as:
 
 The model is trained on the RAVDESS dataset.
 
+---
+
 📂 Dataset
 
 Dataset Used: RAVDESS – Ryerson Audio-Visual Database of Emotional Speech and Song
 
 🔗 Download here: [RAVDESS Dataset](https://zenodo.org/record/1188976/files/Audio_Speech_Actors_01-24.zip)
+
+---
 
 🧠 Technologies Used
 
@@ -50,7 +58,9 @@ Streamlit
 
 Matplotlib / Seaborn
 
-🏗️ Project Structure
+---
+
+📂  Project Structure
 ```
 Emotion-Recognition-Speech/
 │
@@ -92,20 +102,30 @@ Emotion-Recognition-Speech/
 ├── requirements.txt
 └── README.md
 ```
+---
+
 ⚙️ How to Run the Project
 
 1️⃣ Clone the repository
 git clone https://github.com/Alisha4406/CodeAlpha-TASK-Emotion-Recognition-From-Speech.git
 
+---
+
 2️⃣ Create virtual environment
 python -m venv emotion_env
 emotion_env\Scripts\activate
 
+---
+
 3️⃣ Install dependencies
 pip install -r requirements.txt
 
+---
+
 4️⃣ Run Streamlit App
 streamlit run app.py
+
+---
 
 📊 Model Performance
 
@@ -113,12 +133,16 @@ Feature Extraction: MFCC
 Model: Deep Neural Network
 Evaluation Metrics: Accuracy, Confusion Matrix
 
+---
 ACCURACY: 93%
+
+---
 
 🚀 Live Prediction
 
 Upload a .wav file in the Streamlit app and get emotion prediction instantly.
 
+---
 # CodeAlpha-TASK-Emotion-Recognition-From-Speech
 🎙️ Deep Learning based Speech Emotion Recognition system using RAVDESS dataset with MFCC feature extraction and a CNN model, deployed using Streamlit.
 
