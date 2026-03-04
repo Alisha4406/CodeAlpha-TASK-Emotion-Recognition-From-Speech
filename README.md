@@ -2,7 +2,7 @@
 
 ## Streamlit App Preview
 
-![Streamlit App](images/streamlit_app.png)
+![Streamlit App](images/preview.png)
 
 A Deep Learning based Speech Emotion Recognition (SER) system that detects human emotions from voice recordings using MFCC feature extraction and a Neural Network model.
 
@@ -93,24 +93,26 @@ Emotion-Recognition-Speech/
 
 ⚙️ How to Run the Project
 1️⃣ Clone the repository
+
 git clone https://github.com/Alisha4406/CodeAlpha-TASK-Emotion-Recognition-From-Speech.git
 
 2️⃣ Create virtual environment
+
 python -m venv emotion_env
 emotion_env\Scripts\activate
 
 3️⃣ Install dependencies
+
 pip install -r requirements.txt
 
 4️⃣ Run Streamlit App
+
 streamlit run app.py
 
 📊 Model Performance
 
 Feature Extraction: MFCC
-
 Model: Deep Neural Network
-
 Evaluation Metrics: Accuracy, Confusion Matrix
 
 ACCURACY: 93%
