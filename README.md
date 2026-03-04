@@ -118,3 +118,7 @@ ACCURACY: 93%
 🚀 Live Prediction
 
 Upload a .wav file in the Streamlit app and get emotion prediction instantly.
+
+# CodeAlpha-TASK-Emotion-Recognition-From-Speech
+🎙️ Deep Learning based Speech Emotion Recognition system using RAVDESS dataset with MFCC feature extraction and a CNN model, deployed using Streamlit.
+
