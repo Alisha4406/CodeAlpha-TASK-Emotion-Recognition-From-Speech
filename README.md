@@ -51,6 +51,7 @@ Streamlit
 Matplotlib / Seaborn
 
 🏗️ Project Structure
+```
 Emotion-Recognition-Speech/
 │
 ├── data/
@@ -90,23 +91,20 @@ Emotion-Recognition-Speech/
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+```
 ⚙️ How to Run the Project
-1️⃣ Clone the repository
 
+1️⃣ Clone the repository
 git clone https://github.com/Alisha4406/CodeAlpha-TASK-Emotion-Recognition-From-Speech.git
 
 2️⃣ Create virtual environment
-
 python -m venv emotion_env
 emotion_env\Scripts\activate
 
 3️⃣ Install dependencies
-
 pip install -r requirements.txt
 
 4️⃣ Run Streamlit App
-
 streamlit run app.py
 
 📊 Model Performance
