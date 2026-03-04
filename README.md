@@ -1,183 +1,120 @@
-🎙️ Emotion Recognition from Speech using Deep Learning
+🎙️ Emotion Recognition from Speech
 
 ## Streamlit App Preview
 
-![Streamlit App](images/preview.png)
+![Streamlit App](images/streamlit_app.png)
 
+A Deep Learning based Speech Emotion Recognition (SER) system that detects human emotions from voice recordings using MFCC feature extraction and a Neural Network model.
 
-An end-to-end Speech Emotion Recognition (SER) system built using the RAVDESS dataset and Deep Neural Networks.
+📌 Project Overview
 
-This project extracts MFCC features from speech audio and classifies emotions with high accuracy using a structured ML pipeline.
+This project analyzes speech audio files and predicts emotions such as:
 
-🚀 Project Highlights
+😄 Happy
 
-🎧 Audio signal processing using Librosa
+😢 Sad
 
-📊 Advanced visualizations (waveform, spectrogram, MFCC, confusion matrix)
+😠 Angry
 
-🧠 Deep Neural Network model (93% accuracy)
+😐 Neutral
 
-🏗️ Modular and production-ready project structure
+😲 Surprise
 
-🌐 Streamlit web app for real-time emotion prediction
+😨 Fear
 
-🎯 Business Applications
+🤢 Disgust
 
-Speech Emotion Recognition can be applied in:
+😌 Calm
 
-Customer sentiment analysis
-
-Call center monitoring
-
-Mental health tracking
-
-AI voice assistants
-
-Emotion-aware chatbots
+The model is trained on the RAVDESS dataset.
 
 📂 Dataset
 
-This project uses the RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song) dataset.
+Dataset Used: RAVDESS – Ryerson Audio-Visual Database of Emotional Speech and Song
 
-📥 Official Download Link:
-https://zenodo.org/record/1188976/files/Audio_Speech_Actors_01-24.zip
+🔗 Download here: [RAVDESS Dataset](https://zenodo.org/record/1188976/files/Audio_Speech_Actors_01-24.zip)
 
-⚠️ The dataset is not included in this repository due to size limitations.
+🧠 Technologies Used
 
-📥 How to Use the Dataset
+Python
 
-Download the dataset from the link above.
+Librosa
 
-Extract the ZIP file.
+NumPy
 
-Place it inside the following directory:
+TensorFlow / Keras
 
-data/raw/
+Scikit-learn
 
-Your structure should look like:
+Streamlit
 
-data/
-├── raw/
-│   └── RAVDESS/
-│        ├── Actor_01/
-│        ├── Actor_02/
-│        └── Actor_24/
-📊 Dataset Information
-
-24 professional actors
-
-8 emotion classes:
-
-Neutral
-
-Calm
-
-Happy
-
-Sad
-
-Angry
-
-Fearful
-
-Disgust
-
-Surprised
-
-1440 total speech audio files (.wav)
+Matplotlib / Seaborn
 
 🏗️ Project Structure
-emotion-recognition-speech/
+Emotion-Recognition-Speech/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   └── raw/
+│       └── RAVDESS/
+│           ├── Actor_01/
+│           ├── Actor_02/
+│           └── ...
+|
+│       └── processed/
+│           ├── features.npy
+│           ├── labels.npy
 │
 ├── notebooks/
-│   ├── 01_EDA_&_Data_Loading.ipynb
-│   ├── 02_Feature_Engineering.ipynb
-│   ├── 03_Model_Training.ipynb
-│   ├── 04_Model_Evaluation.ipynb
-│   └── 05_Prediction_demo.ipynb
+│   ├── 01_EDA_RAVDESS.ipynb
+│   ├── 02_Feature_Extraction.ipynb
+│   ├── 03_Model_Training_CNN.ipynb
+│   └── 04_Model_Evaluation.ipynb
 │
 ├── src/
 │   ├── config.py
 │   ├── data_loader.py
+|   ├── preprocessing.py
 │   ├── feature_extraction.py
 │   ├── model.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── predict.py
+│   ├── predict.py
+│   └── evaluate.py
 │
 ├── models/
-│   ├── emotion_model.h5
-│   ├── scaler.pkl
+│   └── emotion_model.h5
+│   └── history.pkl
 │   └── label_encoder.pkl
+│   └── scaler.pkl
+|
 │
+├── .gitignore
 ├── app.py
 ├── requirements.txt
 └── README.md
-⚙️ Feature Engineering
 
-Extracted features:
+⚙️ How to Run the Project
+1️⃣ Clone the repository
+git clone https://github.com/Alisha4406/CodeAlpha-TASK-Emotion-Recognition-From-Speech.git
 
-MFCC (Mel Frequency Cepstral Coefficients)
+2️⃣ Create virtual environment
+python -m venv emotion_env
+emotion_env\Scripts\activate
 
-Feature scaling using StandardScaler
-
-Label encoding
-
-🧠 Model Architecture
-
-Deep Neural Network (DNN):
-
-Dense (256) + Batch Normalization + Dropout
-
-Dense (128) + Batch Normalization + Dropout
-
-Dense (64)
-
-Output layer (Softmax)
-
-Loss Function: Sparse Categorical Crossentropy
-Optimizer: Adam
-
-📈 Model Performance
-
-✅ Accuracy: 93%
-
-✅ Balanced class predictions
-
-✅ Confusion matrix visualization
-
-🚀 How to Run the Project
-1️⃣ Install Dependencies
+3️⃣ Install dependencies
 pip install -r requirements.txt
-2️⃣ Run Notebooks (in order)
 
-01_EDA_&_Data_Loading.ipynb
-
-02_Feature_Engineering.ipynb
-
-03_Model_Training.ipynb
-
-04_Model_Evaluation.ipynb
-
-05_Prediction_demo.ipynb
-
-🌐 Run the Streamlit App
+4️⃣ Run Streamlit App
 streamlit run app.py
 
-Upload a .wav file and the model will predict the emotion.
+📊 Model Performance
 
-📚 Key Learning Outcomes
+Feature Extraction: MFCC
 
-Audio signal processing
+Model: Deep Neural Network
 
-Deep learning classification
+Evaluation Metrics: Accuracy, Confusion Matrix
 
-Model evaluation techniques
+ACCURACY: 93%
 
-Modular ML project structure
+🚀 Live Prediction
 
-Model deployment using Streamlit
+Upload a .wav file in the Streamlit app and get emotion prediction instantly.

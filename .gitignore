@@ -1,51 +1,20 @@
-# ===============================
-# Python
-# ===============================
+# Virtual environment
+emotion_env/
+
+# Python cache
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
 
-# ===============================
-# Virtual Environment
-# ===============================
-emotion_env/
-venv/
-env/
-
-# ===============================
-# Jupyter Notebook Checkpoints
-# ===============================
+# Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# ===============================
-# Dataset (DO NOT upload raw data)
-# ===============================
+# Data folders (do not push dataset)
 data/raw/
-
-# ===============================
-# Processed data
-# ===============================
 data/processed/
 
-# ===============================
-# Model files (optional but recommended to ignore)
-# ===============================
-models/*.h5
-models/*.pkl
+# Model files
+*.h5
+*.pkl
 
-# ===============================
-# History files
-# ===============================
-history.pkl
-
-# ===============================
-# VS Code
-# ===============================
-.vscode/
-
-# ===============================
-# System Files
-# ===============================
+# System files
 .DS_Store
-Thumbs.db
